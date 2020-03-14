@@ -10,7 +10,7 @@
         <title>Details</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <a class="navbar-brand" href="#">My Details</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -45,13 +45,59 @@
                     <h1>Introduction</h1>
                     <form>
                         <div class="form-row">
-                          <div class="col">
+                          <div class="form-group col-sm-6">
                             <input type="text" class="form-control" placeholder="First name">
                           </div>
-                          <div class="col">
+                          <div class="form-group col-sm-6">
                             <input type="text" class="form-control" placeholder="Last name">
                           </div>
                         </div>
+                        <div class="form-group">
+                            <label for="former-name">Former name</label>
+                            <input type="text" class="form-control" id="former-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="headline">Headline</label>
+                            <textarea class="form-control" id="headline" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="current-position">Current Position</label>
+                            <select id="current-position" class="form-control">
+                              <option>Credit Analyst</option>
+                              <option>N/A</option>
+                              <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country/Region</label>
+                            <input type="text" class="form-control" id="country">
+                        </div>
+                        <div class="form-group">
+                            <label for="locations">Locations in this Country/Region</label>
+                            <input type="text" class="form-control" id="locations">
+                        </div>
+                        <div class="form-group">
+                            <label for="industry">Industry</label>
+                            <select id="industry" class="form-control">
+                                <option>Choose an industry...</option>
+                                <option>Agriculture</option>
+                                <option>Architectural Services</option>
+                                <option>Education</option>
+                                <option>Entertainment Industry</option>
+                                <option>Finance/Credit Companies</option>
+                                <option>Manufacturing</option>
+                                <option>Oil & Gas</option>
+                                <option>Other</option>
+                                <option>Pharmaceuticals / Health Products</option>
+                                <option>Physicians & Other Health Professionals</option>
+                                <option>Telecom Services & Equipment</option>
+                                <option>Telecom Services & Equipment</option>
+                            </select>
+                        </div>
+
+
+
+                        
                       </form>
                 </div>
                 <div class="col-sm-2"></div>
