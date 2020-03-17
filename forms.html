@@ -10,7 +10,7 @@
         <title>Details</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
             <a class="navbar-brand" href="#">My Details</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -19,29 +19,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Intro <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#intro">Intro <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
+                    <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Education</a>
+                        <a href="#education" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Skills</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
                 
                 </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+              
             </div>
         </nav>
         <div class="container">
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
+                    <a name="intro"></a>
                     <h1>Introduction</h1>
                     <form>
                         <div class="form-row">
@@ -100,7 +98,8 @@
                             <label for="contact-info">Contact Info</label>
                             <input type="text" class="form-control" id="contact-info" placeholder="Profile URL, Phone, Email, WeChat ID">
                         </div>
-                        <h1>Experience</h1>
+                        <a name="experience"></a>
+                        <h1> Experience</h1>
                         <div class="form-group">
                             <label for="job-title">Title</label>
                             <input type="text" class="form-control" id="job-title" placeholder="Ex: Retail Sales Manager">
@@ -210,6 +209,7 @@
                             <input type="file" class="custom-file-input" id="validatedCustomFile" required>
                             <label class="custom-file-label" for="validatedCustomFile">Upload</label>
                         </div>
+                        <a name="education"></a>
                         <h1>Education</h1>
                         <div class="form-group">
                             <label for="school">School</label>
@@ -274,6 +274,24 @@
                             <label for="headline">Description</label>
                             <textarea class="form-control" id="headline" rows="5"></textarea>
                         </div>
+                        <a name="skills"></a>
+                        <h1>Skills</h1>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Choose a skill (up to 10 skills)</label>
+                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                              <option>Management</option>
+                              <option>Coding</option>
+                              <option>Critical Thinking</option>
+                              <option>Problem Solving</option>
+                              <option>Strategic Planning</option>
+                              <option>Design Thinking</option>
+                              <option>Story Telling</option>
+                              <option>Machine Learning</option>
+                              <option>Emotional Intelligence</option>
+                              <option>Leadership</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-danger" type="submit">Submit</button>
 
                     </form>
                 </div>
