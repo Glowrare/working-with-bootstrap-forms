@@ -1,0 +1,12 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.profile-picture-upload {
+    height: 200px;
+    background-image: url(../images/contour-3780327_1280.png);
+    background-size: contain;
