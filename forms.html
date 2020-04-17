@@ -37,182 +37,241 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-2"></div>
-                <div class="col-sm-8">
-                    <a name="intro"></a>
-                    <h1 class="text-danger">Introduction</h1>
-                    <div class="profile-picture-upload">
-                        <div class="profile-picture"> 
+                <div class="col-sm-8" style="border: solid 1px beige; border-top: none;">
+                        <a name="intro"></a>
+                        <h3 class="text-danger">Introduction</h3>
+                        <div class="profile-picture-upload">
+                            <div class="profile-picture"> 
+                            </div>
+                            <div class="image-section">
+                                <img src="images/about.png" style="width: 100px; 
+                                border-radius: 50%;">
+                            </div>
                         </div>
-                        <div class="image-section">
-                            <img src="images/about.png" style="width: 100px; 
-                            border-radius: 50%;">
-                        </div>
-                    </div>
-                    <form>
-                        <div class="form-row">
-                          <div class="form-group col-sm-6">
-                              <label> First Name</label>
-                              <input type="text" class="form-control" placeholder="First name">
-                          </div>
-                          <div class="form-group col-sm-6">
-                              <label> Last Name</label>
-                              <input type="text" class="form-control" placeholder="Last name">
-                          </div>
-                        </div>
-                        <p>
-                            <a class="justify-content-center" data-toggle="collapse" href="#collapse-former-name" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
-                              Add former name
-                            </a>
-                        </p>
-                        <div class="form-group collapse" id="collapse-former-name">
-                            <label for="former-name">Former name</label>
-                            <input type="text" class="form-control" id="former-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="headline">Headline</label>
-                            <textarea class="form-control" id="headline" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="current-position">Current Position</label>
-                            <select id="current-position" class="form-control">
-                              <option>Credit Analyst</option>
-                              <option>N/A</option>
-                              <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="collapse" href="#collapse-show-education" aria-expanded="false" aria-controls="collapseExample">
-                            <label class="form-check-label" for="defaultCheck1">
-                             Show Education in my intro
-                            </label>
-                        </div>
-                        <div class="form-group collapse" id="collapse-show-education">
-                            <label for="show-education">Education</label>
-                            <select id="show-education" class="form-control">
-                              <option>Nexford University</option>
-                              <option>University of Ibadan</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="country">Country/Region</label>
-                            <input type="text" class="form-control" id="country">
-                        </div>
-                        <div class="form-group">
-                            <label for="locations">Locations in this Country/Region</label>
-                            <input type="text" class="form-control" id="locations">
-                        </div>
-                        <div class="form-group">
-                            <label for="industry">Industry</label>
-                            <select id="industry" class="form-control">
-                                <option>Choose an industry...</option>
-                                <option>Agriculture</option>
-                                <option>Architectural Services</option>
-                                <option>Education</option>
-                                <option>Entertainment Industry</option>
-                                <option>Finance/Credit Companies</option>
-                                <option>Manufacturing</option>
-                                <option>Oil & Gas</option>
-                                <option>Other</option>
-                                <option>Pharmaceuticals / Health Products</option>
-                                <option>Physicians & Other Health Professionals</option>
-                                <option>Telecom Services & Equipment</option>
-                                <option>Telecom Services & Equipment</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-info">Contact Info</label>
-                            <input type="text" class="form-control" id="contact-info" placeholder="Profile URL, Phone, Email, WeChat ID">
-                        </div>
-                        <a name="experience"></a>
-                        <h1 class="text-danger"> Experience</h1>
-                        <div class="form-group">
-                            <label for="job-title">Title</label>
-                            <input type="text" class="form-control" id="job-title" placeholder="Ex: Retail Sales Manager">
-                        </div>
-                        <div class="form-group">
-                            <label for="employment-type">Current Position</label>
-                            <select id="employment-type" class="form-control">
-                              <option>-</option>
-                              <option>Full-time</option>
-                              <option>Part-time</option>
-                              <option>Self-employed</option>
-                              <option>Freelance</option>
-                              <option>Contract</option>
-                              <option>Internship</option>
-                              <option>Apprenticeship</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" class="form-control company-icon" id="company" placeholder="Ex: Microsoft">
-                        </div>
-                        <div class="form-check">
-                            <input checked class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="collapse" href="#collapse-end-date" aria-expanded="false" aria-controls="collapseExample">
-                            <label class="form-check-label" for="defaultCheck1">
-                                I am currently working in this role
-                            </label>
-                        </div>
-                        <div class="form-row">
+                        <form>
+                            <div class="introduction-section">
+                            <div class="form-row">
                             <div class="form-group col-sm-6">
-                                <label> Start Date</label>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <select class="form-control">
-                                                <option>Month</option>
-                                                <option>January</option>
-                                                <option>February</option>
-                                                <option>March</option>
-                                                <option>April</option>
-                                                <option>May</option>
-                                                <option>June</option>
-                                                <option>July</option>                                                
-                                                <option>August</option>                                                
-                                                <option>September</option>                                                
-                                                <option>October</option>                                                
-                                                <option>November</option>                                                
-                                                <option>December</option>                                                
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <select class="form-control">
-                                                <option>Year</option>
-                                                <option>2020</option>
-                                                <option>2019</option>
-                                                <option>2018</option>
-                                                <option>2017</option>
-                                                <option>2016</option>
-                                                <option>2015</option>
-                                                <option>2014</option>                                                
-                                                <option>2013</option>                                                
-                                                <option>2012</option>                                                
-                                                <option>2011</option>                                                
-                                                <option>2010</option>                                                
-                                                <option>2009</option>                                                
-                                            </select>
-                                        </div>
-                                    </div>
+                                <label> First Name</label>
+                                <input type="text" class="form-control" placeholder="First name">
                             </div>
                             <div class="form-group col-sm-6">
-                                <label> End Date</label>
-                                <div class="row collapse" id="collapse-end-date">
-                                    <div class="col-sm-6">
-                                        <select class="form-control">
-                                            <option>Month</option>
-                                            <option>January</option>
-                                            <option>February</option>
-                                            <option>March</option>
-                                            <option>April</option>
-                                            <option>May</option>
-                                            <option>June</option>
-                                            <option>July</option>                                                
-                                            <option>August</option>                                                
-                                            <option>September</option>                                                
-                                            <option>October</option>                                                
-                                            <option>November</option>                                                
-                                            <option>December</option>                                                
+                                <label> Last Name</label>
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                            </div>
+                            <p>
+                                <a class="justify-content-center" data-toggle="collapse" href="#collapse-former-name" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                                Add former name
+                                </a>
+                            </p>
+                            <div class="form-group collapse" id="collapse-former-name">
+                                <label for="former-name">Former name</label>
+                                <input type="text" class="form-control" id="former-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="headline">Headline</label>
+                                <textarea class="form-control" id="headline" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="current-position">Current Position</label>
+                                <select id="current-position" class="form-control">
+                                <option>Credit Analyst</option>
+                                <option>N/A</option>
+                                <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="collapse" href="#collapse-show-education" aria-expanded="false" aria-controls="collapseExample">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Show Education in my intro
+                                </label>
+                            </div>
+                            <div class="form-group collapse" id="collapse-show-education">
+                                <label for="show-education">Education</label>
+                                <select id="show-education" class="form-control">
+                                <option>Nexford University</option>
+                                <option>University of Ibadan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country/Region</label>
+                                <input type="text" class="form-control" id="country">
+                            </div>
+                            <div class="form-group">
+                                <label for="locations">Locations in this Country/Region</label>
+                                <input type="text" class="form-control" id="locations">
+                            </div>
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <select id="industry" class="form-control">
+                                    <option>Choose an industry...</option>
+                                    <option>Agriculture</option>
+                                    <option>Architectural Services</option>
+                                    <option>Education</option>
+                                    <option>Entertainment Industry</option>
+                                    <option>Finance/Credit Companies</option>
+                                    <option>Manufacturing</option>
+                                    <option>Oil & Gas</option>
+                                    <option>Other</option>
+                                    <option>Pharmaceuticals / Health Products</option>
+                                    <option>Physicians & Other Health Professionals</option>
+                                    <option>Telecom Services & Equipment</option>
+                                    <option>Telecom Services & Equipment</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-info">Contact Info</label>
+                                <input type="text" class="form-control" id="contact-info" placeholder="Profile URL, Phone, Email, WeChat ID">
+                            </div>
+                            </div>
+                            <div class="experience-section">
+                                    <a name="experience"></a>
+                                    <h3 class="text-danger"> Experience</h3>
+                                    <div class="form-group">
+                                        <label for="job-title">Title</label>
+                                        <input type="text" class="form-control" id="job-title" placeholder="Ex: Retail Sales Manager">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="employment-type">Current Position</label>
+                                        <select id="employment-type" class="form-control">
+                                        <option>-</option>
+                                        <option>Full-time</option>
+                                        <option>Part-time</option>
+                                        <option>Self-employed</option>
+                                        <option>Freelance</option>
+                                        <option>Contract</option>
+                                        <option>Internship</option>
+                                        <option>Apprenticeship</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="company">Company</label>
+                                        <input type="text" class="form-control company-icon" id="company" placeholder="Ex: Microsoft">
+                                    </div>
+                                    <div class="form-check">
+                                        <input checked class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="collapse" href="#collapse-end-date" aria-expanded="false" aria-controls="collapseExample">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            I am currently working in this role
+                                        </label>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-6">
+                                            <label> Start Date</label>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control">
+                                                            <option>Month</option>
+                                                            <option>January</option>
+                                                            <option>February</option>
+                                                            <option>March</option>
+                                                            <option>April</option>
+                                                            <option>May</option>
+                                                            <option>June</option>
+                                                            <option>July</option>                                                
+                                                            <option>August</option>                                                
+                                                            <option>September</option>                                                
+                                                            <option>October</option>                                                
+                                                            <option>November</option>                                                
+                                                            <option>December</option>                                                
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control">
+                                                            <option>Year</option>
+                                                            <option>2020</option>
+                                                            <option>2019</option>
+                                                            <option>2018</option>
+                                                            <option>2017</option>
+                                                            <option>2016</option>
+                                                            <option>2015</option>
+                                                            <option>2014</option>                                                
+                                                            <option>2013</option>                                                
+                                                            <option>2012</option>                                                
+                                                            <option>2011</option>                                                
+                                                            <option>2010</option>                                                
+                                                            <option>2009</option>                                                
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label> End Date</label>
+                                            <div class="row collapse" id="collapse-end-date">
+                                                <div class="col-sm-6">
+                                                    <select class="form-control">
+                                                        <option>Month</option>
+                                                        <option>January</option>
+                                                        <option>February</option>
+                                                        <option>March</option>
+                                                        <option>April</option>
+                                                        <option>May</option>
+                                                        <option>June</option>
+                                                        <option>July</option>                                                
+                                                        <option>August</option>                                                
+                                                        <option>September</option>                                                
+                                                        <option>October</option>                                                
+                                                        <option>November</option>                                                
+                                                        <option>December</option>                                                
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <select class="form-control">
+                                                        <option>Year</option>
+                                                        <option>2020</option>
+                                                        <option>2019</option>
+                                                        <option>2018</option>
+                                                        <option>2017</option>
+                                                        <option>2016</option>
+                                                        <option>2015</option>
+                                                        <option>2014</option>                                                
+                                                        <option>2013</option>                                                
+                                                        <option>2012</option>                                                
+                                                        <option>2011</option>                                                
+                                                        <option>2010</option>                                                
+                                                        <option>2009</option>                                                
+                                                    </select>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="headline">Description</label>
+                                        <textarea class="form-control" id="headline" rows="5"></textarea>
+                                    </div>
+                                    <div class="media-upload">
+                                        <p style="margin-bottom: 0;" class="text-muted">Media</p>
+                                        <p class="text-muted">Add or link to external documents, photos, sites, videos, and presentations.</p>
+                                        <div class="form-row ">
+                                            <div class="media-buttons col-sm-6">
+                                                <button type="button" class="btn btn-danger">Upload</button>
+                                            </div>
+                                            <div class="media-buttons col-sm-6">
+                                                <button type="button" class="btn btn-outline-danger">Link</button>
+                                            </div>
+                                        </div>
+                                        <a href="#" style="font-size: small;"><i class="far fa-question-circle"></i> Supported formats</a>
+                                    </div>
+                            </div>
+                            <hr color="white">
+                            <div class="education-section">
+                                <a name="education"></a>
+                                <h3 class="text-danger" style="margin-top: 20px;">Education</h3>
+                                <div class="form-group">
+                                    <label for="school">School</label>
+                                    <input type="text" class="form-control company-icon" id="school" placeholder="Ex: Boston University">
+                                </div>
+                                <div class="form-group">
+                                    <label for="degree">Degree</label>
+                                    <input type="text" class="form-control" id="degree" placeholder="Ex: Bachelor's">
+                                </div>
+                                <div class="form-group">
+                                    <label for="field-of-study">Field of study</label>
+                                    <input type="text" class="form-control" id="field-of-study" placeholder="Ex: Business">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <label> Start Year</label>
                                         <select class="form-control">
                                             <option>Year</option>
                                             <option>2020</option>
@@ -229,123 +288,74 @@
                                             <option>2009</option>                                                
                                         </select>
                                     </div>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="headline">Description</label>
-                            <textarea class="form-control" id="headline" rows="5"></textarea>
-                        </div>
-                        <div class="media-upload">
-                            <p style="margin-bottom: 0;" class="text-muted">Media</p>
-                            <p class="text-muted">Add or link to external documents, photos, sites, videos, and presentations.</p>
-                            <div class="form-row ">
-                                <div class="media-buttons col-sm-6">
-                                    <button type="button" class="btn btn-primary">Upload</button>
+                                    <div class="form-group col-sm-6">
+                                        <label> End Year (or expected) </label>
+                                            <select class="form-control">
+                                                <option>Year</option>
+                                                <option>2020</option>
+                                                <option>2019</option>
+                                                <option>2018</option>
+                                                <option>2017</option>
+                                                <option>2016</option>
+                                                <option>2015</option>
+                                                <option>2014</option>                                                
+                                                <option>2013</option>                                                
+                                                <option>2012</option>                                                
+                                                <option>2011</option>                                                
+                                                <option>2010</option>                                                
+                                                <option>2009</option>                                                
+                                            </select>
+                                    </div>
                                 </div>
-                                <div class="media-buttons col-sm-6">
-                                    <button type="button" class="btn btn-outline-primary">Link</button>
+                                <div class="form-group">
+                                    <label for="grade">Grade</label>
+                                    <input type="text" class="form-control" id="grade">
+                                </div>
+                                <div class="form-group">
+                                    <label for="headline">Activities and societies </label>
+                                    <textarea class="form-control" id="headline" rows="4"></textarea>
+                                    <small  class="form-text text-muted"> <i>Ex. Alpha Phi Omega, Marching Band, Volleyball</i></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="headline">Description</label>
+                                    <textarea class="form-control" id="headline" rows="5"></textarea>
+                                </div>
+                                <div class="media-upload">
+                                    <p style="margin-bottom: 0;" class="text-muted">Media</p>
+                                    <p class="text-muted">Add or link to external documents, photos, sites, videos, and presentations.</p>
+                                    <div class="form-row ">
+                                        <div class="media-buttons col-sm-6">
+                                            <button type="button" class="btn btn-danger">Upload</button>
+                                        </div>
+                                        <div class="media-buttons col-sm-6">
+                                            <button type="button" class="btn btn-outline-danger">Link</button>
+                                        </div>
+                                    </div>
+                                    <a href="#" style="font-size: small;"><i class="far fa-question-circle"></i> Supported formats</a>
                                 </div>
                             </div>
-                            <a href="#" style="font-size: small;"><i class="far fa-question-circle"></i> Supported formats</a>
-                        </div>
-                        <a name="education"></a>
-                        <h1 class="text-danger">Education</h1>
-                        <div class="form-group">
-                            <label for="school">School</label>
-                            <input type="text" class="form-control company-icon" id="school" placeholder="Ex: Boston University">
-                        </div>
-                        <div class="form-group">
-                            <label for="degree">Degree</label>
-                            <input type="text" class="form-control" id="degree" placeholder="Ex: Bachelor's">
-                        </div>
-                        <div class="form-group">
-                            <label for="field-of-study">Field of study</label>
-                            <input type="text" class="form-control" id="field-of-study" placeholder="Ex: Business">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-sm-6">
-                                <label> Start Year</label>
-                                <select class="form-control">
-                                    <option>Year</option>
-                                    <option>2020</option>
-                                    <option>2019</option>
-                                    <option>2018</option>
-                                    <option>2017</option>
-                                    <option>2016</option>
-                                    <option>2015</option>
-                                    <option>2014</option>                                                
-                                    <option>2013</option>                                                
-                                    <option>2012</option>                                                
-                                    <option>2011</option>                                                
-                                    <option>2010</option>                                                
-                                    <option>2009</option>                                                
-                                </select>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label> End Year (or expected) </label>
-                                    <select class="form-control">
-                                        <option>Year</option>
-                                        <option>2020</option>
-                                        <option>2019</option>
-                                        <option>2018</option>
-                                        <option>2017</option>
-                                        <option>2016</option>
-                                        <option>2015</option>
-                                        <option>2014</option>                                                
-                                        <option>2013</option>                                                
-                                        <option>2012</option>                                                
-                                        <option>2011</option>                                                
-                                        <option>2010</option>                                                
-                                        <option>2009</option>                                                
+                            <hr color="white">
+                            <div class="skills-section">
+                                <a name="skills"></a>
+                                <h3 class="text-danger">Skills</h3>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Choose a skill (up to 10 skills)</label>
+                                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                                    <option>Management</option>
+                                    <option>Coding</option>
+                                    <option>Critical Thinking</option>
+                                    <option>Problem Solving</option>
+                                    <option>Strategic Planning</option>
+                                    <option>Design Thinking</option>
+                                    <option>Story Telling</option>
+                                    <option>Machine Learning</option>
+                                    <option>Emotional Intelligence</option>
+                                    <option>Leadership</option>
                                     </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="grade">Grade</label>
-                            <input type="text" class="form-control" id="grade">
-                        </div>
-                        <div class="form-group">
-                            <label for="headline">Activities and societies </label>
-                            <textarea class="form-control" id="headline" rows="4"></textarea>
-                            <small  class="form-text text-muted"> <i>Ex. Alpha Phi Omega, Marching Band, Volleyball</i></small>
-                        </div>
-                        <div class="form-group">
-                            <label for="headline">Description</label>
-                            <textarea class="form-control" id="headline" rows="5"></textarea>
-                        </div>
-                        <div class="media-upload">
-                            <p style="margin-bottom: 0;" class="text-muted">Media</p>
-                            <p class="text-muted">Add or link to external documents, photos, sites, videos, and presentations.</p>
-                            <div class="form-row ">
-                                <div class="media-buttons col-sm-6">
-                                    <button type="button" class="btn btn-primary">Upload</button>
-                                </div>
-                                <div class="media-buttons col-sm-6">
-                                    <button type="button" class="btn btn-outline-primary">Link</button>
                                 </div>
                             </div>
-                            <a href="#" style="font-size: small;"><i class="far fa-question-circle"></i> Supported formats</a>
-                        </div>
-                        <a name="skills"></a>
-                        <h1 class="text-danger">Skills</h1>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect2">Choose a skill (up to 10 skills)</label>
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
-                              <option>Management</option>
-                              <option>Coding</option>
-                              <option>Critical Thinking</option>
-                              <option>Problem Solving</option>
-                              <option>Strategic Planning</option>
-                              <option>Design Thinking</option>
-                              <option>Story Telling</option>
-                              <option>Machine Learning</option>
-                              <option>Emotional Intelligence</option>
-                              <option>Leadership</option>
-                            </select>
-                        </div>
-                        <button class="btn btn-danger" type="submit">Submit</button>
-                    </form>
+                            <button class="btn btn-danger" type="submit" style="margin-bottom: 15px;">Submit</button>
+                        </form>
                 </div>
             </div>
 
