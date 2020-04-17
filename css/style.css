@@ -8,5 +8,39 @@ body {
 
 .profile-picture-upload {
     height: 200px;
-    background-image: url(../images/contour-3780327_1280.png);
+    position: relative;
+}
+
+.profile-picture {
+    height: 130px;
+    background-image: url(../images/0_Cyberdefence-597931354.jpg);
+    background-size: cover;
+}
+
+.image-section {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+}
+
+#contact-info {
+    background-color: inherit;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 1px white !important;
+}
+
+.company-icon {
+    background-image: url(../images/company.png);
     background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 25px;
+}
+
+.media-buttons button {
+    width: 100%;
+}
+
+div .media-upload button {
+    border-radius: 0;
+}

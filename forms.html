@@ -2,10 +2,8 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/5183653b0f.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Details</title>
@@ -43,10 +41,12 @@
                     <a name="intro"></a>
                     <h1 class="text-danger">Introduction</h1>
                     <div class="profile-picture-upload">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile">
-                            <label class="custom-file-label" for="customFile">Choose file</label>
-                          </div>
+                        <div class="profile-picture"> 
+                        </div>
+                        <div class="image-section">
+                            <img src="images/about.png" style="width: 100px; 
+                            border-radius: 50%;">
+                        </div>
                     </div>
                     <form>
                         <div class="form-row">
@@ -60,7 +60,7 @@
                           </div>
                         </div>
                         <p>
-                            <a class="btn btn-danger" data-toggle="collapse" href="#collapse-former-name" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <a class="justify-content-center" data-toggle="collapse" href="#collapse-former-name" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
                               Add former name
                             </a>
                         </p>
@@ -78,6 +78,19 @@
                               <option>Credit Analyst</option>
                               <option>N/A</option>
                               <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="collapse" href="#collapse-show-education" aria-expanded="false" aria-controls="collapseExample">
+                            <label class="form-check-label" for="defaultCheck1">
+                             Show Education in my intro
+                            </label>
+                        </div>
+                        <div class="form-group collapse" id="collapse-show-education">
+                            <label for="show-education">Education</label>
+                            <select id="show-education" class="form-control">
+                              <option>Nexford University</option>
+                              <option>University of Ibadan</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -131,7 +144,13 @@
                         </div>
                         <div class="form-group">
                             <label for="company">Company</label>
-                            <input type="text" class="form-control" id="company" placeholder="Ex: Microsoft">
+                            <input type="text" class="form-control company-icon" id="company" placeholder="Ex: Microsoft">
+                        </div>
+                        <div class="form-check">
+                            <input checked class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="collapse" href="#collapse-end-date" aria-expanded="false" aria-controls="collapseExample">
+                            <label class="form-check-label" for="defaultCheck1">
+                                I am currently working in this role
+                            </label>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-sm-6">
@@ -175,7 +194,7 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <label> End Date</label>
-                                <div class="row">
+                                <div class="row collapse" id="collapse-end-date">
                                     <div class="col-sm-6">
                                         <select class="form-control">
                                             <option>Month</option>
@@ -210,22 +229,31 @@
                                             <option>2009</option>                                                
                                         </select>
                                     </div>
-                                </div>    
+                                </div>  
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="headline">Description</label>
                             <textarea class="form-control" id="headline" rows="5"></textarea>
                         </div>
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                            <label class="custom-file-label" for="validatedCustomFile">Upload</label>
+                        <div class="media-upload">
+                            <p style="margin-bottom: 0;" class="text-muted">Media</p>
+                            <p class="text-muted">Add or link to external documents, photos, sites, videos, and presentations.</p>
+                            <div class="form-row ">
+                                <div class="media-buttons col-sm-6">
+                                    <button type="button" class="btn btn-primary">Upload</button>
+                                </div>
+                                <div class="media-buttons col-sm-6">
+                                    <button type="button" class="btn btn-outline-primary">Link</button>
+                                </div>
+                            </div>
+                            <a href="#" style="font-size: small;"><i class="far fa-question-circle"></i> Supported formats</a>
                         </div>
                         <a name="education"></a>
                         <h1 class="text-danger">Education</h1>
                         <div class="form-group">
                             <label for="school">School</label>
-                            <input type="text" class="form-control" id="school" placeholder="Ex: Boston University">
+                            <input type="text" class="form-control company-icon" id="school" placeholder="Ex: Boston University">
                         </div>
                         <div class="form-group">
                             <label for="degree">Degree</label>
@@ -286,6 +314,19 @@
                             <label for="headline">Description</label>
                             <textarea class="form-control" id="headline" rows="5"></textarea>
                         </div>
+                        <div class="media-upload">
+                            <p style="margin-bottom: 0;" class="text-muted">Media</p>
+                            <p class="text-muted">Add or link to external documents, photos, sites, videos, and presentations.</p>
+                            <div class="form-row ">
+                                <div class="media-buttons col-sm-6">
+                                    <button type="button" class="btn btn-primary">Upload</button>
+                                </div>
+                                <div class="media-buttons col-sm-6">
+                                    <button type="button" class="btn btn-outline-primary">Link</button>
+                                </div>
+                            </div>
+                            <a href="#" style="font-size: small;"><i class="far fa-question-circle"></i> Supported formats</a>
+                        </div>
                         <a name="skills"></a>
                         <h1 class="text-danger">Skills</h1>
                         <div class="form-group">
@@ -309,5 +350,10 @@
             </div>
 
         </div>
+        <!-- START: Javascript goes here -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- END: Javascript goes here -->
     </body>
 </html>
